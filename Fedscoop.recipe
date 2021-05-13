@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1618197765(AutomaticNewsRecipe):
+    title          = 'Fedscoop'
+    oldest_article = 14
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Fedscoop', 'https://fedscoop.com/rss'),
+    ]

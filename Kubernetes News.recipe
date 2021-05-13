@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1619547645(AutomaticNewsRecipe):
+    title          = 'Kubernetes News'
+    oldest_article = 14
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Kubernetes.io News Feed', 'https://kubernetes.io/feed.xml'),
+        ('The New Stack', 'https://thenewstack.io/feed'),
+    ]

@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1619473741(AutomaticNewsRecipe):
+    title          = 'SRE Weekly'
+    oldest_article = 14
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('SRE Weekly', 'http://sreweekly.com/feed/'),
+    ]
