@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1621306269(AutomaticNewsRecipe):
+    title          = 'Polkadot'
+    oldest_article = 14
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Polkadot.network/blog', 'https://polkadot.network/blog/rss/'),
+    ]
